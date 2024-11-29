@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reporte de Errores</title>
+    <link rel="stylesheet" href="bugs2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><i class="fas fa-bug"></i> Sistema de Reporte de Errores</h1>
+        </header>
+
+        <main>
+            <section class="bug-report-form">
+                <h2>Reportar un Error</h2>
+                <form id="bugForm" action="bug_rep.php" method="POST">
+
+
+                    <div class="input-group">
+                        <label for="bug-description"><i class="fas fa-pencil-alt"></i> Descripcion del Error</label>
+                        <textarea id="bug-description" name="reporte" rows="5" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="priority"><i class="fas fa-exclamation-circle"></i> Prioridad</label>
+                        <select id="priority" name="prioridad" required>
+                            <option value="low">Baja</option>
+                            <option value="medium">Media</option>
+                            <option value="high">Alta</option>
+                        </select>
+                    </div>
+
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Reportar Error</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Sistema de Reporte de Errores. Todos los Derechos Reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Modal for feedback -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

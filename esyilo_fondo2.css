@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0; 
+    background-color: #000000;
+    overflow: hidden;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: none;  /* Initially hidden */
+}
+  
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h2{
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#logo {
+  max-width: 20%; /* Ajusta el tamaño del logo */
+  max-height: 20%; /* Ajusta el tamaño del logo */
+}
+
+
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* Mismo color de fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que esté en la parte superior */
+  opacity: 1;
+  transition: opacity 1s ease; /* Transición suave */
+}
+
+header {
+    background-color: #2e2d2d8f;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    justify-content:space-between;
+} 
+footer {
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+nav {
+    margin: 10px 0;
+}
+main {
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Candara';
+}
+
+.box{
+  width: 180px;
+  height: 180px;
+  background-color:#f1f1f1 ;
+  margin-right: 20px;
+  
+}
+
+
+#carli{
+  display: flex;
+  padding-top: 10px;
+  
+}
+
+.searchBox {
+  display: flex;
+  max-width: 999px;
+  align-items: center;
+  gap: 8px;
+  background: #0f0f0f;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #752c2c 0%, #3d0000 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  padding: 24px 46px 24px 26px;
+  max-width: 999px;
+}
+
+.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+  button {
+    display: inline-block;
+    border-radius: 9px;   
+    background-color: #752c2c;
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+
+   }
+   
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+   span a{
+    color: #ffffff;
+    text-decoration: none;
+   }
+
+/* The navigation menu links */
+#sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: flex;
+  text-align: center;
+}
+
+
+#imagen {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  margin-left: 0px;
+}
+
+#primeros {
+  height: 50%;
+}
+
+
+/* images */
+
+.slick-list{
+  position: relative;
+  align-items: center;
+    height: 304px;
+  padding: 0px 0px;
+  margin: 0px;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease-in-out;
+  background-color: #141414;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+.slick{
+  position: relative;
+  width: 260px;
+  padding: 0 15px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 7px;
+  height: 100%;
+}
+.slick h4{
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: white;
+  padding: 15px;
+  font-family: 'Candara';
+  text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+}
+.slick h4 small{
+  font-size: 15px;
+  display: block;
+}
+.slick a img{
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+  transition: .3s ease-in-out;
+}
+.slick a img:hover{
+  opacity: .4;
+  border-radius: 50px;
+  box-shadow: 0 0 12px #ffffff;
+}
+
+
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  margin-right: 20px;
+}

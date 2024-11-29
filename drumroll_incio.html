@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="esyilo_fondo2.css">
+    <link rel="icon" type="image/png" href="imagenes/image.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumroll</title>
+
+</head>
+<body>
+    <div id="overlay">
+        <img id="logo" src="imagenes/image.png" alt="Logo de Mi Página" />
+    </div>
+    <script>
+        window.onload = function() {
+            const overlay = document.getElementById  ('overlay');
+            setTimeout(() => {
+                overlay.style.opacity = '0'; // Desaparece lentamente
+                setTimeout(() => {
+                    overlay.style.display = 'none'; // Esconde el overlay
+                    document.body.style.overflow = 'auto'; // Permitir el scroll
+                }, 1000); // Espera a que termine la transición
+            }, 1000); // Espera 1 segundo antes de comenzar la transición
+        };
+    </script>
+    <header>
+        <div >
+            <a href="localhost/inicio/drumroll_incio.html">
+            <img src="imagenes/image.png" style="height: 80px; width: 110px; padding-left: 35px;">
+            </a>
+        </div>
+            <div class="searchBox" style="padding-right: 400px;">
+              <input class="searchInput" type="text" name="" placeholder="Search something">
+              <button class="searchButton" href="#">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="4 3 29 29" fill="none">
+    <g clip-path="url(#clip0_2_17)">
+      <g filter="url(#filter0_d_2_17)">
+        <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+      </g>
+    </g>
+    <defs>
+      <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+      </filter>
+      <clipPath id="clip0_2_17">
+        <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+      </clipPath>
+    </defs>
+  </svg>
+</button>
+</div>
+  
+        
+          <div >
+          <button style="height:60px; width:150px;" >
+            <span><a  href="localhost/bugs/bugs.html">Reportar Error</a></span>
+    </button>
+    </div>
+
+        </div>
+        </header>
+        <main>
+            <div class="texto">
+                <h2>Top 5 Álbumes de Rock</h2>
+            </div>
+        
+              <div class="slick-list" id="slick-list" >
+                <div class="library">
+                  <div class="slick-track" id="track" >
+                      <div class="slick">
+                        <hr class="rounded">
+                        
+                          <div>
+                              <a href="http://localhost/albumes/albumes.php?album=1&banda=1&artista=0">
+                                  <h4><small>Dark Side of the Moon</small>Pink Floyd</h4>
+                                  <foto>
+                                      <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcT9kry1myZTi2dMJ7OtgJjmdT__lImpI-pJ9mdq42Cz8HhIet_ro_Obp6q4xbksBbpT" alt="Image">
+                                  </foto>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="slick">
+                           <hr class="rounded">
+                        <div>
+                            
+                            <a href="http://localhost/albumes/albumes.php?album=2&banda=2&artista=0">
+                                <h4><small>Revolver</small>The Beatles</h4>
+                                <foto>
+                                    
+                                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBfPPfKcRSvSwcmQzsbZ2hI3oSdmNpSSDMjhxNE7xrXE-HUsop" alt="Image">
+                                </foto>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <hr class="rounded">
+                        
+                        <div>
+                            <a href="http://localhost/albumes/albumes.php?album=3&banda=3&artista=0">
+                                <h4><small>Rumours</small>Fleetwood Mac</h4>
+                                <foto>
+                                    <img src="https://classicsdujour.com/wp-content/uploads/2020/03/rumours-fleetwood-mac.jpg" alt="Image">
+                                </foto>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <hr class="rounded">
+                        
+                        <div>
+                            <a href="http://localhost/albumes/albumes.php?album=4&banda=4&artista=0">
+                                <h4><small>Nevermind</small>Nirvana</h4>
+                                <foto>
+                                    <img src="https://upload.wikimedia.org/wikipedia/ru/b/b7/NirvanaNevermindalbumcover.jpg" alt="Image">
+                                </foto>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <hr class="rounded">
+                        
+                        <div>
+                            <a href="http://localhost/albumes/albumes.php?album=5&banda=2&artista=0">
+                                <h4><small>Abbey Road</small>The Beatles</h4>
+                                <foto>
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" alt="Image">
+                                </foto>
+                            </a>
+                        </div>
+                    </div>
+                   
+                 
+          </div>
+                </div>
+              </div>
+
+
+              <br/>
+              
+                <div id="texto">
+                  <h2>Top 5 albumes de pop</h2>
+                  </div>
+              
+                <div class="slick-list" id="slick-list" >
+                    <div class="slick-track" id="track" >
+                        <div class="slick">
+                        <hr class="rounded">
+                            <div>
+                                <a href="http://localhost/albumes/albumes.php?album=6&banda=0&artista=1">
+                                    <h4><small>Born This Way</small>Lady Gaga</h4>
+                                    <foto>
+                                        <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-discos-pop-lady-gaga-1626191761.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image">
+                                    </foto>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                        <hr class="rounded">
+                          <div>
+                              <a href="http://localhost/albumes/albumes.php?album=7&banda=0&artista=2">
+                                  <h4><small>Songs in The Key of Life</small>Stevie Wonder</h4>
+                                  <foto>
+                                      <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-discos-pop-stevie-wonder-1626191761.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image">
+                                  </foto>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="slick">
+                        <hr class="rounded">
+                          <div>
+                            
+                              <a href="http://localhost/albumes/albumes.php?album=8&banda=5&artista=0">
+                                  <h4><small>Saturday Night Fever</small>Bee Gees</h4>
+                                  <foto>
+                                      <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-discos-pop-bee-gees-1626191762.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image">
+                                  </foto>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="slick">
+                        <hr class="rounded">
+                          <div>
+                              <a href="http://localhost/albumes/albumes.php?album=9&banda=0&artista=3">
+                                  <h4><small>Hunky Dory</small>David Bowie</h4>
+                                  <foto>
+                                      <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-discos-pop-bowie-hunky-dorie-1626191762.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image">
+                                  </foto>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="slick">
+                        <hr class="rounded">
+                          <div>
+                              <a href="http://localhost/albumes/albumes.php?album=10&banda=6&artista=0">
+                                  <h4><small>Random Access Memories</small>Daft Punk</h4>
+                                  <foto>
+                                      <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-discos-pop-daft-punk-1626191762.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image">
+                                  </foto>
+                              </a>
+                          </div>
+                      </div>
+                        
+                     
+                    </div>
+                </div>
+            </div>
+                </div>
+
+
+                <br/>
+
+
+                    <div id="texto">
+                      <h2>Top 5 albumes de hip hop</h2>
+                      </div>
+                  
+                    <div class="slick-list" id="slick-list" >
+                        <div class="slick-track" id="track" >
+                            <div class="slick">
+                        <hr class="rounded">
+                                <div>
+                                    <a href="http://localhost/albumes/albumes.php?album=11&banda=0&artista=4">
+                                        <h4><small>To Pimp a Butterfly</small>Kendrick Lamar</h4>
+                                        <foto>
+                                            <img src="https://i.discogs.com/a-J1Lh4N_2Ngo1j3JlPYU__VHUY8EPHslvrR4nQFcBg/rs:fit/g:sm/q:90/h:385/w:382/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4Nzc0/MTMtMTQyODU0OTg2/Ni02NzIxLmpwZWc.jpeg" alt="Image">
+                                        </foto>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                        <hr class="rounded">
+                              <div>
+                                  <a href="http://localhost/albumes/albumes.php?album=12&banda=0&artista=5">
+                                      <h4><small>The College Dropout</small>Kanye West</h4>
+                                      <foto>
+                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS114mirWHqfs2Zi6RF3WtPOYjJ1_NHtgn0Q&s" alt="Image">
+                                      </foto>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="slick">
+                        <hr class="rounded">
+                              <div>
+                                  <a href="http://localhost/albumes/albumes.php?album=13&banda=7&artista=0">
+                                      <h4><small>Paul's Boutique</small>Beastie Boys</h4>
+                                      <foto>
+                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUHGayl_YTdBZMvN1Y7XYlx0PQ6ZQje_GYw&s" alt="Image">
+                                      </foto>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="slick">
+                        <hr class="rounded">
+                              <div>
+                                  <a href="http://localhost/albumes/albumes.php?album=14&banda=8&artista=0">
+                                      <h4><small>Speakerboxxx/The Love Below</small>Outkast</h4>
+                                      <foto>
+                                          <img src="https://upload.wikimedia.org/wikipedia/en/5/54/Speakerboxxx-The_Love_Below.png" alt="Image">
+                                      </foto>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="slick">
+                        <hr class="rounded">
+                              <div>
+                                  <a href="http://localhost/albumes/albumes.php?album=15&banda=0&artista=5">
+                                      <h4><small>My beautiful Dark Twisted Fantasy</small>Kanye West</h4>
+                                      <foto>
+                                          <img src="https://static.qobuz.com/images/covers/47/74/0060252747447_600.jpg" alt="Image">
+                                      </foto>
+                                  </a>
+                              </div>
+                          </div>
+                         
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <br/>
+                        
+
+                            <div id="texto" >
+                              <h2>Top 5 albumes de metal</h2>
+                              </div>
+                          
+                            <div class="slick-list" id="slick-list" style="margin-bottom: 80px;" >
+                                
+                                <div class="slick-track" id="track" >
+                                    <div class="slick">
+                        <hr class="rounded">
+                                        <div>
+                                            <a href="http://localhost/albumes/albumes.php?album=16&banda=10&artista=0">
+                                                <h4><small>Among the Living</small>Anthrax</h4>
+                                                <foto>
+                                                    <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/20-albumes-anthrax.jpg" alt="Image">
+                                                </foto>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="slick">
+                        <hr class="rounded">
+                                      <div>
+                                          <a href="http://localhost/albumes/albumes.php?album=17&banda=11&artista=0">
+                                              <h4><small>Rust in Peace</small>Megadeth</h4>
+                                              <foto>
+                                                  <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/20-albumes-megadeth.jpg" alt="Image">
+                                              </foto>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="slick">
+                        <hr class="rounded">
+                                      <div>
+                                          <a href="http://localhost/albumes/albumes.php?album=18&banda=12&artista=0">
+                                              <h4><small>Ænima</small>Tool</h4>
+                                              <foto>
+                                                  <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/20-albumes-tool.jpg" alt="Image">
+                                              </foto>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="slick">
+                        <hr class="rounded">
+                                      <div>
+                                          <a href="http://localhost/albumes/albumes.php?album=19&banda=13&artista=0">
+                                              <h4><small>Melissa</small>Mercyful Fate</h4>
+                                              <foto>
+                                                  <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/20-albumes-Mercyful-Fate.jpg" alt="Image">
+                                              </foto>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="slick">
+                        <hr class="rounded">
+                                      <div >
+                                          <a href="http://localhost/albumes/albumes.php?album=20&banda=14&artista=0">
+                                              <h4><small>Holy Diver</small>Dio</h4>
+                                              <foto>
+                                                  <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/20-albumes-dio.jpg" alt="Image">
+                                              </foto>
+                                          </a>
+                                      </div>
+                                  </div>
+                                    
+                                 
+                                </div>
+    
+                            </div>
+                        </div>
+                            </div>
+
+                            <br/>
+     
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Página Web. Todos los derechos reservados.</p>
+        <script>
+        // Function to detect when the user has scrolled to the bottom of the page
+window.addEventListener('scroll', function() {
+    // Check if the user has scrolled to the bottom of the page
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
+        // Show the footer
+        document.getElementById('footer').style.display = 'block';
+    } else {
+        // Hide the footer if not at the bottom
+        document.getElementById('footer').style.display = 'none';
+    }
+});
+</script>
+</footer>
+
+</body>
+</html>
